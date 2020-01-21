@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Course Editor</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="course-editor.style.client.css" rel="stylesheet" />
+    <link <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="d-flex bd-highlight">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item p-2 flex-fill bd-highlight">
+                            <a class="nav-link" href="#"><i class="fas fa-trash-alt"></i></a>
+                        </li>
+                        <li class="nav-item p-2 flex-fill bd-highlight">
+                            <a class="nav-link" href="#">CS5610 - WebDev</a>
+                        </li>
+                        <li class="nav-item active p-2 flex-fill bd-highlight">
+                            <a class="nav-link " href="#">Build</a>
+                        </li>
+                        <li class="nav-item p-2 flex-fill bd-highlight">
+                            <a class="nav-link" href="#">Pages</a>
+                        </li>
+                        <li class="nav-item p-2 flex-fill bd-highlight">
+                            <a class="nav-link" href="#">Theme</a>
+                        </li>
+                        <li class="nav-item p-2 flex-fill bd-highlight">
+                            <a class="nav-link" href="#">Store</a>
+                        </li>
+                        <li class="nav-item p-2 flex-fill bd-highlight">
+                            <a class="nav-link" href="#">Apps</a>
+                        </li>
+                        <li class="nav-item p-2 flex-fill bd-highlight">
+                            <a class="nav-link" href="#">Settings</a>
+                        </li>
+                        <li class="nav-item p-2 flex-fill bd-highlight">
+                            <a class="nav-link" href="#"><i class="fas fa-plus-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-4">
+                <div>
+                    <ul class="list-group wbdv-module-list">
+                        <li class="list-group-item">Module 1 - JQuery</li>
+                        <li class="list-group-item active">Module 2 - React</li>
+                        <li class="list-group-item">Module 3 - Redux</li>
+                        <li class="list-group-item">Module 4 - Native</li>
+                        <li class="list-group-item">Module 5 - Angular</li>
+                        <li class="list-group-item">Module 6 - Node</li>
+                        <li class="list-group-item">Module 7 - Mongo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-8">
+                <br />
+                <div class="row">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Topic 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Topic 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Topic 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Topic 4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-plus-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row d-flex flex-row-reverse bd-highlight">
+                    <div class="class=" p-2 bd-highlight">
+                        <button type="button" class="btn btn-success">Save</button>
+                        <span>Preview</span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="row">
+                        <div class="col-8">
+                            <h5>Heading Widget</h5>
+                        </div>
+                        <div class="col-4">
+                            <button><i class="fas fa-arrow-up"></i></button>
+                            <button><i class="fas fa-arrow-down"></i></button>
+                            <select name="Heading" id="">
+                                <option value="Heading">Heading</option>
+                            </select>
+                            <button><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form action="">
+                            <div class="form-group row">
+                                <label for="phoneNumber" class="">Phone</label>
+                                <input type="tel" name="phoneNumber" class="form-control wbdv-field wbdv-phone"
+                                    id="phoneNumber" minlength="9" maxlength="14">
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="">E-mail</label>
+                                <input type="email" class="form-control wbdv-field wbdv-email" id="email">
+                            </div>
+                            <div class="form-group row">
+                                <label for="facultyType" class="">Role</label>
+                                <select name="role" id="facultyType" class="wbdv-field wbdv-role">
+                                    <option value="ROLE">Role</option>
+                                    <option value="STUDENT">Student</option>
+                                    <option value="TEACHER">Teacher</option>
+                                    <option value="TA">TA</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
