@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+            <div class="row">
+                <h1>Profile</h1>
+            </div>
+            <div class="alert alert-success wbdv-message" role="alert">
+                Profile successfully saved
+            </div>
+            <form>
+                <div class="form-group row">
+                    <label for="usernameField" class="col-lg-1 col-sm-1">Username</label>
+                    <input type="text" class="form-control col-lg-11 col-sm-11 wbdv-field wbdv-username" id="usernameField">
+                </div>
+                <div class="form-group row">
+                    <label for="phoneNumber" class="col-lg-1 col-sm-1">Phone</label>
+                    <input type="tel" name="phoneNumber" class="form-control col-lg-11 col-sm-11 wbdv-field wbdv-phone"
+                        id="phoneNumber" minlength="9" maxlength="14">
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-lg-1 col-sm-1">E-mail</label>
+                    <input type="email" class="form-control col-lg-11 col-sm-11 wbdv-field wbdv-email" id="email">
+                </div>
+                <div class="form-group row">
+                    <label for="facultyType" class="col-lg-1 col-sm-1">Role</label>
+                    <select name="role" id="facultyType" class="col-lg-11 col-sm-11 wbdv-field wbdv-role">
+                        <option value="ROLE">Role</option>
+                        <option value="STUDENT">Student</option>
+                        <option value="TEACHER">Teacher</option>
+                        <option value="TA">TA</option>
+                    </select>
+                </div>
+                <div class="form-group row">
+                    <label for="dateOfBirth" class="col-lg-1 col-sm-1">Date of Birth</label>
+                    <input type="date" class="col-lg-11 col-sm-11 wbdv-field wbdv-dob" id="dateOfBirth" value="mm/dd/yyyy">
+                </div>
+                <div class="form-group row">
+                    <button type="button" class="btn btn-success col-sm-12 col-lg-12 wbdv-button wbdv-update">Update</button>
+                </div>
+                <div class="form-group row">
+                    <button type="button" class="btn btn-danger col-12 wbdv-button wbdv-logout">Logout</button>
+                </div>
+            </form>
+    </div>
+</body>
+</html>
