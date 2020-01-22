@@ -15,15 +15,15 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <header class="col-sm-12">
+            <div class="col-sm-12">
                 <nav class="navbar navbar-light bg-light">
-                    <div class="col-1">
+                    <div class="col-lg-1 col-sm-1">
                         <i class="fas fa-bars wbdv-field wbdv-hamburger"></i>
                     </div>
-                    <div class="col-3">
-                        <h1 class="wbdv-label wbdv-course-manager hide">Course Manager</h1>
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <h1 class="wbdv-label wbdv-course-manager">Course Manager</h1>
                     </div>
-                    <div class="col-8">
+                    <div class="col-lg-8 col-sm-11">
                         <form class="form-inline">
                             <input class="form-control mr-sm-2 wbdv-field wbdv-new-course" type="search"
                                 placeholder="New Course Title" aria-label="Search">
@@ -32,7 +32,7 @@
                         </form>
                     </div>
                 </nav>
-            </header>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -40,10 +40,12 @@
             <thead class="thead-dark container-fluid wbdv-header wbdv-sort">
                 <tr>
                     <th class="wbdv-header wbdv-title" colspan="" scope="col">Title</th>
-                    <th class="wbdv-header wbdv-owner" scope="col">Owned By</th>
-                    <th class="wbdv-header wbdv-last-modified" scope="col">Last Modified By Me</th>
-                    <th class="wbdv-button wbdv-grid-layout" scope="col"><i class="fas fa-th-large"></i></th>
-                    <th class="wbdv-button wbdv-list-layout" scope="col"><i class="fas fa-sort-alpha-down"></i></th>
+                    <th class="wbdv-header wbdv-owner d-none d-lg-block" scope="col">Owned By</th>
+                    <th class="wbdv-header wbdv-last-modified d-none d-lg-block" scope="col">Last Modified By Me</th>
+                    <th class="wbdv-button wbdv-grid-layout d-none d-lg-block" scope="col"><i
+                            class="fas fa-th-large"></i></th>
+                    <th class="wbdv-button wbdv-list-layout d-none d-lg-block" scope="col"><i
+                            class="fas fa-sort-alpha-down"></i></th>
                 </tr>
             </thead>
             <tbody>
